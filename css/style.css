@@ -1,0 +1,270 @@
+/* Estilos Base */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #F4F4F4;
+    color: #262626;
+    font-family: Verdana, sans-serif, Helvetica;
+    font-size: 1em;
+}
+a{
+    text-decoration: none;
+    color:rgb(9, 9, 148);
+}
+a:hover{
+    color: #000;
+}
+#wrapper-all{
+    margin: 10px auto;
+    padding: 10px;
+    width:480px;
+}
+/* Estilos del formulario */
+form.relacionar {
+    margin: 10px auto 0;
+    width: auto;
+}
+form.relacionar fieldset {
+    background: white;
+    border: 1px solid #E1E1E1;
+    box-shadow: 0 0 10px #DADADA;
+    -webkit-box-shadow: 0 0 10px #DADADA;
+    -moz-box-shadow: 0 0 10px #DADADA;
+    padding: 25px;
+}
+form.relacionar fieldset > div {
+    clear: both;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+form.relacionar fieldset div label {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    margin-top: 5px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 100px;
+}
+form.relacionar input[type="text"],
+form.relacionar select,
+form.relacionar textarea {
+    background: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    color: #626262;
+    display: block;
+    float: left;
+    padding: 8px;
+    resize: none;
+    width: 265px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+}
+form.relacionar input[type="text"]:focus, form.relacionar textarea:focus {
+    background: #F9F9F9;
+    border: 1px solid #D3D3D3;
+    outline: none;
+}
+form.relacionar .ultimo{
+    margin-bottom: 0;
+    position: relative
+}
+form.relacionar button {
+    background: #444444;
+    border: 0 none;
+    color: #FFFFFF;
+    float: right;
+    font-weight: bold;
+    height: 32px;
+    margin: 0px 2px;
+    padding: 0 10px;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+form.relacionar button:hover{
+    background: #6A6A6A;
+}
+ 
+/* AJAX Gif y mensajes de exito o fracaso */
+.hide{
+    display: none;
+}
+.ajaxgif{
+    position: absolute;
+    right: 150px;
+    top: 5px;
+}
+.msg{
+    color: white;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    position: absolute;
+    right: -155px;
+    text-transform: uppercase;
+    min-width: 121px;
+}
+.msg_ok{
+    background: #589D05;
+}
+.msg_error{
+    background: red;
+}
+/* Main Menu*/
+
+#main-menu ul {
+    font-weight: bold;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+#main-menu ul li{
+    display: inline-block;
+    margin: 0px 5%;
+    padding: 5px 0px;
+}
+#main-menu ul li a{
+    padding: 5px 10px;
+    background: #DBDBDB;
+}
+#main-menu ul li a:hover{
+    background: #ccc;
+}
+#resultados{
+    font-family: fantasy, Verdana, Helvetica;
+    font-size: 1.5em;
+    text-align: center;
+    height: 1px;
+}
+#si, #no{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 20px;
+}
+.sn{
+    color: red;
+}
+/* Resultados*/
+#tabla-resultados {
+margin: 0px auto;
+width: 95%;
+font-size: 0.9em;
+min-width: 436px;
+}
+
+#tabla-resultados .item{
+    border: 1px solid #ccc;
+    border-bottom: 0px;
+    margin: 0px auto;
+    width: 98%;
+}
+#tabla-resultados .head{
+    background: #0D1C49;
+    color: white;}
+#tabla-resultados .item-0{background: #E4EAF8;}
+#tabla-resultados .item-1{background: #F0F2F3;}
+#tabla-resultados .item div{ 
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+#tabla-resultados .item .docente{
+    width: 35%;
+}
+#tabla-resultados .item .curso{
+    width: 35%;
+}
+#tabla-resultados .item .positivo,
+#tabla-resultados .item .negativos{
+    text-align: center;
+    width: 10%;
+}
+
+@media (max-width: 1200px ){
+#tabla-resultados {
+    font-size: 0.9em;}    
+#tabla-resultados .item .docente{
+    width: 35%;
+}
+#tabla-resultados .item .curso{
+    width: 38%;
+}
+#tabla-resultados .item .positivo{
+    width: 5%;
+}
+#tabla-resultados .item .negativos{
+    width: 6%;
+}
+}
+@media (max-width: 960px ){
+#tabla-resultados {
+    font-size: 0.8em;}}
+@media (max-width: 800px ){
+#tabla-resultados {
+    font-size: 0.8em;}
+#tabla-resultados .item .docente{
+    width: 35%;
+}
+#tabla-resultados .item .curso{
+    width: 35%;
+}
+#tabla-resultados .item .positivo{
+    width: 8%;
+}
+#tabla-resultados .item .negativos{
+    width: 8%;
+}
+#main-menu ul li{display: block;}
+#main-menu ul li a{width: 95%;display: block;}
+}
+@media (max-width: 600px ){
+#tabla-resultados {
+    font-size: 0.8em;
+    width: 98%; }    
+#tabla-resultados .item .docente{
+    width: 35%;
+}
+#tabla-resultados .item .curso{
+    width: 40%;
+}
+#tabla-resultados .item .positivo{
+    width: 4%;
+}
+#tabla-resultados .item .negativos{
+    width: 3%;
+}
+#main-menu ul li{display: block;}
+#main-menu ul li a{width: 95%;display: block;}
+}
+
+@media (max-width: 480px ){
+#tabla-resultados {
+    font-size: 0.7em;
+    width: 98%; }    
+#tabla-resultados .item .docente{
+    width: 35%;
+}
+#tabla-resultados .item .curso{
+    width: 35%;
+}
+#tabla-resultados .item .positivo{
+    width: 4%;
+}
+#tabla-resultados .item .negativos{
+    width: 3%;
+}
+
+#main-menu ul li{display: block;}
+#main-menu ul li a{width: 95%;display: block;}
+}
+
+.info{
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 30px;
+}
